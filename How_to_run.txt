@@ -1,0 +1,3 @@
+before running change the output file path according to your system path in settings.py file.
+open speechTranslatorApi in pycharm just run it.
+open localhost link it will redirected to swagger ui.

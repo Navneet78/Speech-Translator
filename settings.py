@@ -1,0 +1,1 @@
+output_path= r'C:\\Navneet\azure\Text_to_speech\files\\'
