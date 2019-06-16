@@ -9,8 +9,8 @@ import languages
 print (languages.languages)
 class speech_convert(object):
     def __init__(self):
-        self.Translator_subscription_key="135c0b93f9504b4e9dad8b53f0e052c6"
-        self.speech_subscription_key= "33ea2aa9fa6641f0ad7813285f790cc2"
+        self.Translator_subscription_key=""
+        self.speech_subscription_key= ""  ## Enter your subscription keys
         self.service_region= "centralindia"
     def speech_to_speech(self, AUDIO_FILE,input_anguage,output_language ):
         text = Speech_to_text_request.handler(AUDIO_FILE, input_anguage)
@@ -24,22 +24,9 @@ class speech_convert(object):
         print(type(traslated_audio))
         return traslated_audio
 if __name__ == "__main__":
-    # Translator_subscription_key = "135c0b93f9504b4e9dad8b53f0e052c6"
-    # speech_subscription_key= "33ea2aa9fa6641f0ad7813285f790cc2"
-    # AUDIO_FILE = "C:\\Navneet\Text_to_speech\sample-20190611-1156.wav"
+  
     AUDIO_FILE= get_audio.data
     converter= speech_convert()
     translated=converter.speech_to_speech(AUDIO_FILE)
     print(type(translated))
-    # service_region= "centralindia"
-    # Speech= SpeechToText(speech_subscription_key,service_region)
-    # Speech.configuration()
-    # text= Speech.speech_to_text()
-    # text=Speech_to_text_request.handler(AUDIO_FILE)
-    # translator= Translator(Translator_subscription_key)
-    # translated_text= translator.translator(text)
-    # text_to_speech= TextToSpeech(speech_subscription_key,translated_text)
-    # text_to_speech.get_token()
-    # text_to_speech.save_audio()
-    # text= input()
-    # app.translator(text)
+  
