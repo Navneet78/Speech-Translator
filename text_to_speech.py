@@ -48,7 +48,7 @@ class TextToSpeech(object):
 
 
 if __name__ == "__main__":
-    subscription_key = "33ea2aa9fa6641f0ad7813285f790cc2"
+    subscription_key = ""   #Enter your subscription key
     app = TextToSpeech(subscription_key)
     app.get_token()
     app.save_audio()
