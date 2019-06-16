@@ -1,7 +1,7 @@
 import json
 import requests
 import languages
-API_KEY = '33ea2aa9fa6641f0ad7813285f790cc2'
+API_KEY = ''   ## Eneter your own key and service region
 REGION = 'centralindia'
 MODE = 'dictation'
 LANG = 'it-IT'
