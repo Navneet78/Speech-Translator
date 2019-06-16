@@ -4,7 +4,6 @@ import languages
 API_KEY = ''   ## Eneter your own key and service region
 REGION = 'centralindia'
 MODE = 'dictation'
-LANG = 'it-IT'
 FORMAT = 'simple'
 
 
